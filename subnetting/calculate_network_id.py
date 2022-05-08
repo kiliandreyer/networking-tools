@@ -44,10 +44,3 @@ def calculate(ip, mask):
     fourth = int(network_id[3], 2)
 
     return (str(first) + "." + str(second) + "." + str(third) + "." + str(fourth))
-
-ip = input("IP: ")
-mask = input("Mask: ")
-ip = ip.split('.')
-mask = mask.split('.')
-
-print(calculate(ip, mask))
